@@ -24,14 +24,14 @@
 	<c:forEach items="${sensorList}" var="sensorList" varStatus="vs">
     <tr>
         <td>${sensorList.sensorId}</td>
-        <td>${sensorList.WP001}</td>
-        <td>${sensorList.WP002}</td>
-        <td>${sensorList.WP007}</td>
-        <td>${sensorList.WP008}</td>
-        <td>${sensorList.WP023}</td>
-        <td>${sensorList.WP028}</td>
-        <td>${sensorList.WP031}</td>
-        <td>${sensorList.createTime}</td>
+        <td>${sensorList.temp}</td>
+        <td>${sensorList.humidity}</td>
+        <td>${sensorList.tm10}</td>
+        <td>${sensorList.tm2_5}</td>
+        <td>${sensorList.tm1}</td>
+        <td>${sensorList.co2}</td>
+        <td>${sensorList.tvoc}</td>
+        <td>${sensorList.date}</td>
     </tr>
     </c:forEach>
 </table>
