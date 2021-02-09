@@ -12,7 +12,7 @@ public class EnvironmentVO {
 	private double tm10;
 	private double co2;
 	private double tvoc;
-	private Date date;
+	private String date;
 	public String getSensorId() {
 		return sensorId;
 	}
@@ -45,13 +45,13 @@ public class EnvironmentVO {
 		return tvoc;
 	}
 
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
 
 	
 	public EnvironmentVO(String sensorId, double temp, double humidity, double tm1, double tm2_5, double tm10,
-			double co2, double tvoc, Date date) {
+			double co2, double tvoc, String date) {
 		super();
 		this.sensorId = sensorId;
 		this.temp = temp;
