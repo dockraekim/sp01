@@ -20,7 +20,15 @@ public class HomeController {
 	
 	// 모델에 담아서 경로 지정하기
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String getSensorData(Model model) {
+	public String home(Model model) {
+		//model.addAttribute("sensorList", service.getResponse());
+		return "home";
+	}
+	
+	
+	// 모델에 담아서 경로 지정하기
+	@RequestMapping(value = "/sensor", method = RequestMethod.GET)
+	public String getSensor(Model model) {
 		model.addAttribute("sensorList", service.getResponse());
 		return "sensor";
 	}
