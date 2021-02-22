@@ -32,16 +32,8 @@ public class HomeController {
 	@RequestMapping(value = "/sensor", method = RequestMethod.GET)
 	public String getSensor(Model model) {
 		model.addAttribute("sensorList", service.getResponse());
-		return "sensor";
+		return "link";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -72,6 +64,11 @@ public class HomeController {
 		return "form";
 	}
 	
+	@RequestMapping(value = "/form1", method = RequestMethod.GET)
+	public String form1(Model model) {
+		
+		return "form1";
+	}
 	
 	
 	@RequestMapping(value = "/js01", method = RequestMethod.GET)
